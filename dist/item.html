@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/semantic.js"></script>
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet"href="css/mystyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<div class="row">
+    <div class="col-md-12 bg-dark text">
+        <div class="row">
+            <div class="col-md-2">
+                <a class="ui image text-white ">
+                    <img src="image/63_-_Call_Center-512.png" height="50" width="50"/></a>
+                <h2 style="color: white;left: 80px;position: absolute;top: 10px">POS SYSTEM</h2>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-9">
+
+                            </div>
+                            <div class="col-md-3" style="top: 10px;left: 50px">
+                                <button class="ui circular facebook icon button">
+                                    <i class="fab fa-facebook"></i>
+                                </button>
+                                <button class="ui circular twitter icon button">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="ui circular linkedin icon button">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </button>
+                                <button class="ui circular google plus icon button">
+                                    <i class="fab fa-google-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="submanu">
+
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ui vertical inverted menu bg-dark text-white border-0 col-md-12" style="width: 93%;position: absolute;padding-top: 15%">
+                    <a class="item text-white"href="dashboard.html">
+                        <img src="image/Combo Chart_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 5px"/>
+                        Dashboard
+                    </a>
+                    <a class="item  text-white"href="customer.html">
+                        <img src="image/icons8_User_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 5px"/>
+                        Customer Management</a>
+
+                    <a class="item text-white"href="item.html">
+                        <img src="image/Ingredients_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 0px"/>
+                        Item Management
+                    </a>
+                    <a class="item text-white"href="invoice.php">
+                        <img src="image/Shopping Cart_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 5px"/>
+                        Order
+                    </a>
+                    <a class="item text-white"href="orderview.php">
+                        <img src="image/Purchase Order_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 5px"/>
+                        View Order
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div style="background-color: #24344D;margin-top: 5%">
+                            <form id="saveformItm" method="post">
+                                <h2 class="ui dividing header" style="color: deeppink">Item Information</h2>
+                                <label style="color: yellow">Item Code</label>
+                                <input type="text" class="form-control col-md-7" name="iid" id="iid" placeholder="Enter ItemID">
+                                <label style="color: yellow">Item Name</label>
+                                <input type="text" class="form-control col-md-7" name="name" id="name" placeholder="Enter Name">
+                                <label style="color: yellow">Unit Price</label>
+                                <input type="text" class="form-control col-md-7" name="uprice" id="uprice" placeholder="Enter Address">
+                                <label style="color: yellow">Item QTY</label>
+                                <input type="text" class="form-control col-md-7" name="qty" id="qty" placeholder="Enter C-Limit">
+
+                                <br>
+                                <button class="btn btn-danger col-md-2"style="margin-bottom: 10px" type="button" id="btnRegister">Register</button>
+                                <button class="btn btn-primary col-md-2"style="margin-bottom: 10px"type="button" id="btnUpdate">Update</button>
+                                <button class="btn btn-success col-md-2"style="margin-bottom: 10px"type="button" id="btnDelete">Delete</button>
+                                <button class="btn btn-secondary col-md-2"style="margin-bottom: 10px"type="button" id="btnRefresh">Refresh</button>
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <div class="ui two column grid" style="width: 670px;top: 40px;position: relative">
+                                            <div class="column">
+                                                <div class="ui raised segment">
+                                                    <a class="ui red ribbon label">Overview</a>
+                                                    <span>Account Details</span>
+                                                    <p style="font-size: small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aspernatur atque cum deleniti et illo
+                                                        laborum magni maxime molestiae natus nesciunt pariatur, quibusdam repellat rerum sit, ullam veniam voluptatibus.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card shadow col-md-12" style="background-color: #24344D;top: 100px;width: 670px;position: relative">
+                                            <div class="card-body text-white">
+                                                <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
+                                                <div class="progress mb-4">
+                                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
+                                                <div class="progress mb-4">
+                                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
+                                                <div class="progress mb-4">
+                                                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8" style="top: 20px">
+                <table class="ui unstackable table">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="text-black-50">Item Code</th>
+                        <th scope="col" class="text-black-50">Item Name</th>
+                        <th scope="col" class="text-black-50">Unit Price</th>
+                        <th scope="col" class="text-black-50">Qty</th>
+                    </tr>
+                    </thead>
+                    <tbody id="itemTable">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/itemJS.js"></script>
+</body>
+</html>
